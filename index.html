@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <h1>Kalkulator</h1>
+    <input type="text" class="display" id="display" value="0" readonly>
+    <div class="buttons">
+      <button class="button gray" onclick="clearDisplay()">AC</button>
+      <button class="button gray" onclick="deleteLast()">⌫</button>
+      <button class="button orange" onclick="appendOperator('÷')">÷</button>
+      <button class="button orange" onclick="appendOperator('*')">×</button>
+
+
+      <button class="button dark" onclick="appendNumber('7')">7</button>
+      <button class="button dark" onclick="appendNumber('8')">8</button>
+      <button class="button dark" onclick="appendNumber('9')">9</button>
+      <button class="button orange" onclick="appendOperator('-')">−</button>
+
+      <button class="button dark" onclick="appendNumber('4')">4</button>
+      <button class="button dark" onclick="appendNumber('5')">5</button>
+      <button class="button dark" onclick="appendNumber('6')">6</button>
+      <button class="button orange" onclick="appendOperator('+')">+</button>
+
+
+      <button class="button dark" onclick="appendNumber('1')">1</button>
+      <button class="button dark" onclick="appendNumber('2')">2</button>
+      <button class="button dark" onclick="appendNumber('3')">3</button>
+      <button class="button orange equals" onclick="calculateResult()">=</button>
+
+      <button class="button dark img"><img src="bintang.png" alt="bintang"></button>
+      <button class="button dark" onclick="appendNumber('0')">0</button>
+      <button class="button dark" onclick="appendNumber('00')">00</button>
+
+    </div>
+    <p>©Desfa2025</p>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
